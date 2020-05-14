@@ -1,0 +1,41 @@
+/* =============
+    Section 2
+============= */
+#section-2{
+    padding-bottom: 5 px;
+    padding-top: 5 px;  
+
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2-container .";
+    }
+    #section-2-container{
+
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+            grid-template-areas: "section-2-image section-2-content";
+            padding: 50px 0;
+        }
+
+        @include xl{
+            grid-area: section-2-container; 
+        }
+        aside{
+            background-image: url('../img/section-2/Shoes_Rocks.jpg');
+            background-size: cover;
+            height: 480px;
+    
+            @include md{
+                grid-area: section-2-image;
+                height: 410px;
+            }
+            @include lg{
+                height: 740px;
+            }
+        }
+   }
+
+}

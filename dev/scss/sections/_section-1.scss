@@ -1,0 +1,20 @@
+/* =============
+    Section 1
+============= */
+#section-1 {
+    div{
+        background-image: url('../img/section-1/Ocean_Rocks.jpg');
+        background-position: center;
+        background-size: cover;
+        padding: 600px;
+        
+        @include md {
+            height: 700px;
+        }
+    
+        @include lg {
+            height: 800px;
+        }
+     }
+
+}
